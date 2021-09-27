@@ -23,6 +23,7 @@ public class Main {
             for (int j = 0; j < inputArray.length - 1; j++) { //Comparison size of inner loop =>
                 // wenn Wert an 1. Stelle größer als an 2. => tauschen
                 if (inputArray[j] > inputArray[j + 1]) {
+                    // temporary ist wichtig zum zwischenspeichern, da einer ja ersetzt wird
                     int temporaryStorage = inputArray[j + 1];
                     inputArray[j + 1] = inputArray[j];
                     inputArray[j] = temporaryStorage;
